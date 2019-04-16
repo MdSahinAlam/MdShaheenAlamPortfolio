@@ -1,0 +1,500 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: sans-serif;
+    font-size: 14px
+}
+ul{
+    list-style: none
+}
+a{
+    text-decoration: none
+}
+.flex{
+    display: flex
+}
+.space{
+    justify-content: space-between
+}
+
+
+/*==================================================
+            menubar start now
+===================================================*/
+.bg-light {
+	background-color: transparent !important;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+
+    color: #87d37c;
+
+}
+.navbar-light .navbar-nav .nav-link {
+	color:#87d37c;
+	text-transform: uppercase;
+    font-weight: 600;
+    transition: .05s;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+	color: #FF3636;
+}
+.logo img {
+	width: 144px;
+	height: 50px;
+}
+.menu_section {
+	margin-top: 20px;
+}
+
+
+
+/*==================================================
+            slide start now
+===================================================*/
+
+
+#slider {
+	background: url(../img/header-bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.carousel-item{
+    padding: 250px 0;
+    align-items: center;
+    text-align: center;
+    color: #d84c4c;
+}
+.carousel-item h3 {
+    font-size: 32px;
+    color: #d84c4c
+}
+.carousel-item h1 {
+	padding: 10px 20px;
+	display: inline;
+	border: 1px solid;
+    color: white;
+}
+.carousel-item h4{
+    font-size: 24px;
+    padding-top: 15px;
+    color: #d84c4c
+}
+.carousel-item span{
+    color: #87d37c;
+}
+.carousel-indicators li {
+	box-sizing: content-box;
+	-ms-flex: 0 1 auto;
+	flex: 0 1 auto;
+	width: 10px;
+	height: 12px;
+	margin-right: 3px;
+	margin-left: 3px;
+	text-indent: -999px;
+	cursor: pointer;
+	background-color: #fff;
+	opacity: .5;
+	transition: opacity .6s ease;
+	border-radius: 5px;
+	padding: unset;
+	background-clip: unset;
+	border: none;
+}
+.carousel-indicators .active {
+	opacity: 1;
+	background: #87d37c;
+}
+
+
+
+
+/*==================================================
+            about us start now
+===================================================*/
+
+
+#about_us{
+    padding: 100px 0;
+}
+.about_top {
+	padding-bottom: 15px;
+	max-width: 600px;
+	margin: auto;
+    text-align: center
+}
+.about_top h2{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.about_bottom{
+    text-align: center;
+    color: #030303;
+}
+.about_bottom  h5{ 
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.about_content:hover h5,
+.about_content:hover span, .active{
+    color: #87d37c;
+}
+
+
+
+/*==================================================
+            service start now
+===================================================*/
+#service{
+    padding: 90px 0;
+    background: #e1e1e1;
+    
+}
+.service_img img{
+    width: 100%
+}
+.service_img {
+	position: relative;
+	overflow: hidden;
+	box-shadow: 2px 5px 5px #87D37C;
+}
+.service_img img {
+	height: 225px;
+}
+.service_overflow{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,.5);
+    top: -100%;
+    transition: .5s
+    
+}
+.service_img:hover .service_overflow, .active{
+    top: 0;
+}
+.about_content span {
+	font-size: 50px;
+}
+.serviceicon span{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    color: white;
+    border: 1px solid #fff;
+    font-size: 10px;
+    padding: 10px;
+    line-height: 40px;
+    margin-right: 10px;
+}
+.serviceicon span:hover{
+    background: #87d37c
+}
+.serviceicon{
+    position: absolute;
+    left: 35%;
+    bottom: -100%;
+    transition: .5s
+}
+.service_img:hover .serviceicon, .active{
+    bottom: 40%;
+}
+
+
+
+
+
+/*==================================================
+            portfolio start now
+===================================================*/
+#portfolio{
+    padding: 100px 0;
+    
+}
+/* ---- button ---- */
+
+.button {
+  display: inline-block;
+  padding: 10px 18px;
+  margin-bottom: 10px;
+  background: black;
+  border: none;
+  color: white;
+  font-family: sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #87d37c;
+    color: white
+}
+
+.button:active,
+.button.is-checked {
+  background-color: #87d37c;
+    color: white
+}
+
+.button.is-checked {
+  color: white;
+}
+
+/* ---- button-group ---- */
+
+.button-group:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.button-group{
+    margin-bottom: 20px;
+    text-align: center
+}
+.button-group .button {
+  border-radius: 0;
+  margin-left: 0;
+  margin-right: 8px;
+}
+
+
+/* ---- .element-item ---- */
+
+.center{
+    text-align: center
+}
+.element-item > * {
+  margin: 0;
+  padding: 0;
+}
+.element-item{
+    width: 33%;
+    position: relative;
+    overflow: hidden
+    
+}
+.portfolio-overley{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.8);
+    bottom: -100%;
+    transition: .8s;
+}
+.element-item:hover .portfolio-overley{
+    bottom: 0;
+}
+.portfolio-overley h2{
+    text-align: center;
+    margin-top: 150px;
+    color: #45673f;
+}
+.element-item img {
+	width: 100%;
+	border: 12px solid white;
+    overflow: hidden;
+    height: 250px
+}
+
+.element-item .name {
+  position: absolute;
+
+  left: 10px;
+  top: 60px;
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.element-item .symbol {
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  font-size: 42px;
+  font-weight: bold;
+  color: white;
+}
+
+.element-item .number {
+  position: absolute;
+  right: 8px;
+  top: 5px;
+}
+
+.element-item .weight {
+  position: absolute;
+  left: 10px;
+  top: 76px;
+  font-size: 12px;
+}
+
+
+/*==================================================
+            our pricing start now
+===================================================*/
+
+#our-pricing{
+    padding: 80px 0;
+}
+.pricing-table {
+    background: #39393a;
+    padding: 20px 50px;
+    border-radius: 5px;
+    color: #fff;
+    transition: .6s
+}
+
+.pricing_top {
+	width: 150px;
+	height: 150px;
+	border: 5px solid #fff;
+	border-radius: 100%;
+	margin: auto;
+	padding: 34px;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 8px;
+	padding-top: 50px;
+    margin-bottom: 20px;
+        transition: .6s
+}
+.pricing_top:hover{
+    background: white;
+    color: #87d37c;
+}
+
+.pricing_middle a {
+	display: block;
+	color: white;
+	line-height: 30px;
+	border-bottom: 1px solid;
+	padding-top: 10px;
+}
+.pricing_bottom {
+	background: #fff;
+	color: black;
+	padding: 2px;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-top: 15px;
+        transition: .6s
+}
+.pricing-table:hover{
+    background: #87d37c;
+    color: #fff;
+}
+.pricing-table:hover .btn{
+    background: #fff;
+    color: #87d37c;
+}
+.pricing-table:hover .pricing_top{
+        background: white;
+    color: #87d37c;
+}
+
+/*==================================================
+            counter start now
+===================================================*/
+
+#counter {
+	background: url(../img/counter-bg.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.counter-row {
+    background: rgba(0,0,0,.6);
+    color: white;
+    border: 1px solid #ab8f8f;
+    font-weight: bold;
+    padding: 10px 0;
+    
+}
+.counter-overlow{
+    background: rgba(0,0,0,.5);
+        padding: 80px 0;
+}
+
+
+
+/*==================================================
+            contact us start now
+===================================================*/
+
+#contact-us {
+    padding: 90px 0;
+}
+.contact-us{
+    color: #232424;
+}
+.contact-us span {
+	font-size: 48px;
+}
+.contact-us h5{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.contact-us:hover span{
+    color: #99cc66;
+}
+.contact-us:hover h5{
+    color: #99cc66;
+}
+
+
+
+
+
+/*==================================================
+            form start now
+===================================================*/
+
+
+#form {
+    background: #f5f5f5;
+    padding: 50px 0;
+}
+#comment {
+	height: 94px;
+}
+#subm {
+	border-radius: unset;
+}
+.footer-end {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+/*==================================================
+            footer start now
+===================================================*/
+#footer {
+    padding: 10px 0;
+    background: #000101;
+    color: #d4d4d4;
+}
+.footer-end span {
+	font-size: 24px;
+	padding-right: 8px;
+	margin-top: -32px;
+}
+.footer-end span:hover{
+    color: #87d37c;
+}
+
+.menu_section navbar-toggler-icon{
+    color: white
+}
+.text-center ul li a {
+	color: white;
+	padding: 5px;
+	margin-top: -6px;
+}

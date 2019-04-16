@@ -1,0 +1,69 @@
+/*******************************************************************************************************************
+                                	All Responsive Code
+*******************************************************************************************************************/
+/* ==========================================================================
+                        for more responsive extra large destop
+   ========================================================================== */
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    
+}
+
+
+
+/* ==========================================================================
+                        for more responsive large destop
+   ========================================================================== */
+/*// Large devices (desktops, 992px and up)*/
+@media (max-width: 991px) {
+  .navbar-light .navbar-toggler {
+	border-color: #a71c1c;
+	background: white;}
+    .button {
+	padding: 10px 8px;
+	font-size: 12px;}
+    .element-item img {
+	height: 200px;}
+}
+
+/* ==========================================================================
+                        for more responsive medium device
+   ========================================================================== */
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (max-width: 767px) { 
+    .carousel-item h1 {
+	padding: 5px 5px;
+	font-size: 32px;}
+    .button {
+	padding: 7px 5px;
+	font-size: 12px;}
+    .element-item img {
+	height: 180px;}
+}
+
+
+
+
+/* ==========================================================================
+                        for more responsive medium device
+   ========================================================================== */
+/*
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+*/
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (max-width:576px) {
+    
+}
+
+/* ==========================================================================
+                        for more responsive small device
+   ========================================================================== */
+
+@media (max-width: 300px) {
+
+}
+
+
